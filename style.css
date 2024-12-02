@@ -1,0 +1,201 @@
+:root {
+    --primary-color: #00bcd4;
+    --secondary-color: #ff5722;
+    --background-gradient: linear-gradient(135deg, #0c162e, #1f284e);
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: var(--font-family);
+    background: var(--background-gradient);
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0.5rem;
+
+}
+
+header p {
+    font-size: 1rem;
+}
+
+.video-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    background: rgba(0, 123, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.video-section, .search-section, .character-section {
+    text-align: center;
+    padding: 2rem;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.video-section:hover, .search-section:hover, .character-section:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff;
+    background: rgba(0, 188, 212, 0.7);
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+}
+
+
+h2 {
+    font-size: 2rem;
+    color: #ff5722;
+    text-shadow: 0 0 5px #00bcd4;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+label:hover {
+    color: #00bcd4;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 10px rgba(0, 255, 255, 0.7);
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border: 2px solid #00bcd4;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.7);
+}
+
+input[type="text"]::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+input, button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border: 2px solid var(--primary-color);
+}
+
+input:focus {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+}
+
+
+
+button {
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ff5722;
+    transform: scale(1.1);
+
+}
+
+.character-section img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.character-section img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: #ff5722;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: bottom 0.3s ease;
+    
+}
+
+body:hover footer {
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
