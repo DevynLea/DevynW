@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       try {
         // Fetch character data from the server
-        const response = await fetch(`http://localhost:3000/api/character/${characterInput.toLowerCase().replace(' ', '_')}`);
+        const response = await fetch(`https://devynw.onrender.com/api/character/${characterInput.toLowerCase().replace(' ', '_')}`);
         if (!response.ok) throw new Error('Character not found');
         const data = await response.json();
   
